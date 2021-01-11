@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* 全ての要素をボックスサイジング　ボーダーボックスを効かす */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 600px;
+  /* background-color: rgb(255, 0, 34); */
+  /* border: 10px solid black;
+  border-radius: 5px; */
+}
+
+header > h2 {
+  color: red;
+}
+
+header ul {
+  list-style: none;
+  display: inline-flex;
+  background-color: yellowgreen;
+}
+
+.form{
+  /* padding: 20px; */
+  margin: 20px 0;
+}
+
+.form input,
+.form textarea,
+.form button {
+  background-color: rgb(224, 248, 246);
+  border: 1px solid turquoise;
+  display: block;
+  width: 100%;
+}
+
+.form * + *{
+  margin-top: 12px;
+}
+
+.mov video {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+main li + li {
+  padding-left: 30px;
+}
+
+article {
+  background-color: cornsilk;
+}
+
+/* #title {
+  color: blue;
+} */
+/* cssには基本的にIDは使わない（基本クラスのみ） */
+
+h2:hover::after {
+  content: "🎍";
+}
+
+main article {
+  padding: 20px;
+}
+
+main article + article {
+  margin-top: 20px;
+}
+
+span {
+  color: white;
+  background-color: sandybrown;
+  padding: 2px 20px;
+  display: inline-block;
+}
+
+footer {
+  padding: 20px 0 12px 0;
+  background-color: rgb(185, 247, 240);
+}
