@@ -8,7 +8,7 @@ html {
 }
 /* 全ての要素をボックスサイジング　ボーダーボックスを効かす */
 
-* {
+*{
   margin: 0;
   padding: 0;
   text-align: center;
@@ -27,13 +27,15 @@ header img {
 }
 
 header > h2 {
-  color: red;
+  padding: 20px;
+  /* color: red; */
 }
 
-header ul {
-  list-style: none;
-  display: inline-flex;
-  background-color: yellowgreen;
+header > p,
+.form > p {
+  text-align: left;
+  font-size: 0.9rem;
+  color: rgb(66, 66, 66);
 }
 
 .form{
@@ -48,6 +50,16 @@ header ul {
   border: 1px solid turquoise;
   display: block;
   width: 100%;
+}
+
+.form input,
+.form textarea{
+  margin: 0;
+}
+
+.form input,
+.form button {
+  padding: 5px 0;
 }
 
 .form * + *{
