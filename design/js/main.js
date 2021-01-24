@@ -1,21 +1,14 @@
 "use strict";
 {
   const images = [
-    "img/pic01.jpg",
-    "img/pic02.jpg",
-    "img/pic03.jpg",
-    "img/pic01.jpg",
-    "img/pic02.jpg",
-    "img/pic03.jpg",
-    "img/pic01.jpg",
-    "img/pic02.jpg",
-    "img/pic03.jpg",
-    "img/pic01.jpg",
-    "img/pic02.jpg",
-    "img/pic03.jpg",
-    "img/pic01.jpg",
-    "img/pic02.jpg",
-    "img/pic03.jpg",
+    "img/sample0.png",
+    "img/sample1.png",
+    "img/sample2.png",
+    "img/sample3.png",
+    "img/sample4.png",
+    "img/sample5.png",
+    "img/sample6.png",
+    "img/sample7.png",
   ];
   let currentIndex = 0;
 

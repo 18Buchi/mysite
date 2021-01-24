@@ -8,39 +8,67 @@ html {
 }
 /* 全ての要素をボックスサイジング　ボーダーボックスを効かす */
 
-*{
+* {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
+body {
+  background: rgba(235, 235, 235, 0.5);
+  width: 350px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  body {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
 .container {
-  width: 600px;
+  width: 85%;
   margin: 0 auto;
 }
 
 header img {
-  width: 600px;
+  width: 100%;
+
   /* background-color: rgb(255, 0, 34); */
   /* border: 10px solid black;
   border-radius: 5px; */
 }
 
 header > h2 {
-  padding: 20px;
+  padding-bottom: 20px;
   /* color: red; */
 }
 
 header > p,
 .form > p {
+  display: inline-block;
+  width: 90%;
   text-align: left;
   font-size: 0.9rem;
   color: rgb(66, 66, 66);
 }
 
-.form{
+.form {
   /* padding: 20px; */
   margin: 20px 0;
+}
+
+.form input,
+.form textarea {
+  text-align: left;
 }
 
 .form input,
@@ -48,12 +76,12 @@ header > p,
 .form button {
   background-color: rgb(224, 248, 246);
   border: 1px solid turquoise;
-  display: block;
-  width: 100%;
+  /* display: block; */
+  width: 90%;
 }
 
 .form input,
-.form textarea{
+.form textarea {
   margin: 0;
 }
 
@@ -62,12 +90,12 @@ header > p,
   padding: 5px 0;
 }
 
-.form * + *{
+.form * + * {
   margin-top: 12px;
 }
 
 .mov video {
-  width: 600px;
+  width: 90%;
   margin: 0 auto;
   border-radius: 5px;
 }
@@ -86,7 +114,7 @@ article {
 /* cssには基本的にIDは使わない（基本クラスのみ） */
 
 h2:hover::after {
-  content: "🎍";
+  content: "✌️";
 }
 
 main article {
@@ -105,6 +133,7 @@ span {
 }
 
 footer {
+  margin-top: 20px;
   padding: 20px 0 12px 0;
   background-color: rgb(185, 247, 240);
 }
