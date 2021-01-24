@@ -15,7 +15,6 @@ html {
 }
 
 body {
-  background: rgba(235, 235, 235, 0.5);
   width: 350px;
   margin: 0 auto;
 }
@@ -45,6 +44,23 @@ header img {
   /* background-color: rgb(255, 0, 34); */
   /* border: 10px solid black;
   border-radius: 5px; */
+}
+
+header .collection {
+  border: 0.5px solid gray;
+  border-radius: 35px;
+box-shadow: 0 6px 0 gray;
+opacity: 0.5;
+}
+
+header .collection:hover{
+  opacity: 1;
+}
+
+header .collection:active{
+  box-shadow: none;
+  position: relative;
+  top: 6px;
 }
 
 header > h2 {
